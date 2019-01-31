@@ -31,32 +31,35 @@
 </div>
 <div class="looking-for">
 <div class="looking-for-items">
-        <div class="looking-for-img">
-            <img src="" alt="">
-        </div>    
-        <div class="looking-for-link-title">
-            <h5>Modellen</h5>
-        </div>
-    </div>  
-    <div class="looking-for-items">
+    <div class="looking-for-img">
+        <img src="img/img-landingpage/landingpage-img1.png" alt="Models">
+    </div>    
+    <div class="looking-for-link-title">
+        <h5>Modellen</h5>
+    </div>
+    </div>
+    <div class="looking-for-middle-line"></div>  
+    <div class="looking-for-items ">
         <div class="looking-for-img ">
-            <img src="" alt="">
+            <img src="img/img-landingpage/landingpage-img1.png" alt="Models">   
         </div>    
         <div class="looking-for-link-title">
             <h5>Private Lease</h5>
         </div>
     </div>  
+    <div class="looking-for-middle-line"></div>  
     <div class="looking-for-items">
         <div class="looking-for-img">
-            <img src="" alt="">
+            <img src="img/img-landingpage/landingpage-img1.png" alt="Models">
         </div>    
         <div class="looking-for-link-title">
             <h5>Occasions</h5>
         </div>
-    </div>  
+    </div> 
+    <div class="looking-for-middle-line"></div>   
     <div class="looking-for-items">
         <div class="looking-for-img">
-            <img src="" alt="">
+            <img src="img/img-landingpage/landingpage-img1.png" alt="Models">
         </div>    
         <div class="looking-for-link-title">
             <h5>Dealers</h5>
@@ -65,5 +68,3 @@
 </div>
 </body>    
 </html>
-
-dit is een test!
