@@ -16,50 +16,73 @@
     <title>Seat Nederland</title>
 </head>
 <body>
-<?php
-include "include-basic-files/navbar.html";
-?>
 
 <div class="model-page-header-container">
-    <div class="model-page-header-image">
-        <img src="img/img-productpage/ibiza/ibiza-bg-header.jpg" alt="">
-    </div>  
-    <div class="model-page-header-title">
-        <h1>Ervaar de SEAT Ibiza nu zelf.</h1>
-        <a class="button-header" href="https://forms.seat.nl/site/proefrit?mc=ibiza&_ga=2.226863645.1604845812.1546898764-1491468392.1546518586" target="_blank">Nu proefrijden</a>
-    </div>    
-</div>
-<div class="model-page-header-info-section">
-    <div class="header-image-info-whitespace">
-    </div> 
-    <div class="header-image-info">
-        <h3>prijs</h3>
-        1700
-    </div>
-    <div class="header-image-info">
-        <h3>Private Lease</h3>
-        249
-    </div>  
-    <div class="header-image-info">
-        <h3>Bijtelling</h3>
-        109
-    </div>  
-    <div class="header-image-info">
-        <h3>Garantie</h3>
-        4 jaar
-    </div>        
-</div>  
+<?php
+include "include-basic-files/navbar.html";
+include "db_connection.php";
 
-<div class="model-page-interior">
-    <div class="interior-title">
-        <h1>Interieur van de SEAT ...</h1>
-    </div>
-    <div class="interior-bg-image">
-        <img src="img/img-productpage/ibiza/ibiza-interior.jpg" alt="">
-        <div id="clickme">Click this text</div>
-<div id="popup">text</div>
-</div>
+$number = $_GET["number"];
+
+    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease FROM modellen WHERE number='$number'";
+
+    $data = $conn->query($sql);  
+
+    foreach ($data as $row)
+    {   
+        echo
+            '<div class="model-page-header-image">
+            <img src="img/img-productpage/ibiza/ibiza-bg-header.jpg" alt="">
+            </div>  
+            <div class="model-page-header-title">
+            <h1>Ervaar de SEAT Ibiza nu zelf.</h1>
+            <a class="button-header" href="https://forms.seat.nl/site/proefrit?mc=ibiza&_ga=2.226863645.1604845812.1546898764-1491468392.1546518586" target="_blank">Nu proefrijden</a>
+            </div>    
+            </div>
+            <div class="model-page-header-info-section">
+            <div class="header-image-info-whitespace">
+            </div> 
+            <div class="header-image-info">
+            <h3>prijs</h3>
+            1700
+            </div>
+            <div class="header-image-info">
+            <h3>Private Lease</h3>
+            249
+            </div>  
+            <div class="header-image-info">
+            <h3>Bijtelling</h3>
+            109
+            </div>  
+            <div class="header-image-info">
+            <h3>Garantie</h3>
+            4 jaar
+            </div>        
+            </div>  
+            
+            <div class="model-page-interior">
+            <div class="interior-title">
+            <h1>Interieur van de SEAT ...</h1>
+            </div>
+            <div class="interior-bg-image">
+            <img src="img/img-productpage/ibiza/ibiza-interior.jpg" alt="">
+            <div id="clickme">Click this text</div>
+            <div id="popup">text</div>
+            </div>';
+    }  
+?>
+
+
+
+
+
+
+
+
+
+
     
+
 
 
 
