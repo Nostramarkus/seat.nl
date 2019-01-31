@@ -61,6 +61,14 @@ body {
     padding-right: 2rem;
 }
 
+.items-navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.items-navbar a:hover{
+    color: #F47a14;
+}
 
 .searchfield-navbar {
     width: 10%;
