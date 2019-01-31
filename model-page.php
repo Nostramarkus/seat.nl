@@ -24,7 +24,7 @@ include "db_connection.php";
 
 $number = $_GET["number"];
 
-    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease FROM modellen WHERE number='$number'";
+    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease, headerImg, testDriveLink, interiorImg FROM modellen WHERE number='$number'";
 
     $data = $conn->query($sql);  
 
@@ -32,11 +32,11 @@ $number = $_GET["number"];
     {   
         echo
             '<div class="model-page-header-image">
-            <img src="img/img-productpage/ibiza/ibiza-bg-header.jpg" alt="">
+            <img alt="img-header" src="' .$row['headerImg'].'"/>
             </div>  
             <div class="model-page-header-title">
-            <h1>Ervaar de SEAT Ibiza nu zelf.</h1>
-            <a class="button-header" href="https://forms.seat.nl/site/proefrit?mc=ibiza&_ga=2.226863645.1604845812.1546898764-1491468392.1546518586" target="_blank">Nu proefrijden</a>
+            <h1>'.$row['modelTitle'].'</h1>
+            <a class="button-header" href="'.$row['testDriveLink'].'" target="_blank">Nu proefrijden</a>
             </div>    
             </div>
             <div class="model-page-header-info-section">
@@ -44,30 +44,28 @@ $number = $_GET["number"];
             </div> 
             <div class="header-image-info">
             <h3>prijs</h3>
-            1700
+            € '.$row['price'].'
             </div>
             <div class="header-image-info">
             <h3>Private Lease</h3>
-            249
+            € '.$row['pricePrivateLease'].'
             </div>  
             <div class="header-image-info">
             <h3>Bijtelling</h3>
-            109
+            € '.$row['price'].'
             </div>  
             <div class="header-image-info">
             <h3>Garantie</h3>
-            4 jaar
+            '.$row['price'].'
             </div>        
             </div>  
             
             <div class="model-page-interior">
             <div class="interior-title">
-            <h1>Interieur van de SEAT ...</h1>
+            <h1>Interieur van de SEAT '.$row['model'].'</h1>
             </div>
             <div class="interior-bg-image">
-            <img src="img/img-productpage/ibiza/ibiza-interior.jpg" alt="">
-            <div id="clickme">Click this text</div>
-            <div id="popup">text</div>
+            <img src="' .$row['interiorImg'].'" alt="interior '.$row['model'].'">
             </div>';
     }  
 ?>
