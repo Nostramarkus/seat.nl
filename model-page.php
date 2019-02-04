@@ -24,7 +24,7 @@ include "db_connection.php";
 
 $number = $_GET["number"];
 
-    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease, headerImg, testDriveLink, carImage1, interiorImg FROM modellen WHERE number='$number'";
+    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease, headerImg, testDriveLink, carImage1, interiorImg, carIntroductionTitle, carIntroductionImage FROM modellen WHERE number='$number'";
 
     $data = $conn->query($sql);  
 
@@ -38,22 +38,19 @@ $number = $_GET["number"];
                 <div class="model-page-info-section">
                     <div class="model-page-info-menu-section">
                         <div class="model-page-info-menu-section-box">
-                            <a href="#">menu1</a>
+                            <a href="#">Model</a>
                         </div>
                         <div class="model-page-info-menu-section-box">
-                            <a href="#">menu2</a>
+                            <a href="#">Techniek</a>
                         </div>
                         <div class="model-page-info-menu-section-box">
-                            <a href="#">menu3</a>
+                            <a href="#">Proefrit</a>
                         </div>
                         <div class="model-page-info-menu-section-box">
-                            <a href="#">menu4</a>
+                            <a href="#">Afbeeldingen</a>
                         </div>
                     </div>
-                    <div class="model-page-info-button-section">
-                        <a class="button-header" href="'.$row['testDriveLink'].'" target="_blank">Boek proefrit</a>
-                        <a class="button-header" href="'.$row['testDriveLink'].'" target="_blank">Stel samen</a>
-                    </div>
+                
                     <div class="model-page-info-price-section">
                         <div class="model-page-info-price-section-box">
                         Prijs:<br> €'.$row['price'].'
@@ -77,15 +74,21 @@ $number = $_GET["number"];
                     <div class="model-page-car-introduction-textarea">
                         <div class="model-page-car-introduction-textarea-text">
                             <h2>'.$row['model'].'</h2>
-                            <h1>Generaties aan dynamiek</h1>
-                            <p>We hebben de SEAT Ibiza in een nieuwe jasje gestoken. Het icoon die al 30 jaar op onze wegen is te vinden, was toe aan een welverdiende upgrade. Met die upgrade rolt de vijfde generatie Ibiza’s van de band en is hij nog ruimer, comfortabeler, slimmer en efficiënter dan ooit tevoren.
-                            </p>
+                            <h1>'.$row['carIntroductionTitle'].'</h1>
+                            <p>'.$row['carIntroductionImage'].'</p>
                         </div>
                     </div>
                 </div>
-                
 
-             
+                <div class="model-page-car-movie debug1" id="parralex-3">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NqeXluxyKIY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="model-page-car-movie-mp4">
+                        <div class="model-page-car-movie-title debug1">
+                            <h2>'.$row['modelTitle'].'</h2>
+                            
+                        </div>
+                    </div>
+                </div>
 
             </div>';
     }  
