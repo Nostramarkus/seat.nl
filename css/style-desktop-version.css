@@ -16,6 +16,7 @@ black #00000 , orange #F47a14 , white #fffff , grey #fbfbfb , Google font: Ralew
 body {
     font-family: 'Raleway';
     margin: 0;
+    background: #f4f4f4;
 }
 
 /*NAVBAR*/
@@ -29,8 +30,9 @@ body {
     flex-direction: row;
     align-items: center;
     font-size: 0.9rem;
-    background-color: white;
+    background: white;
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+    z-index: 9999;
 }
 
 .logo-navbar {
@@ -272,15 +274,16 @@ body {
 
 /*model-page.php style*/
 
-.model-page-header-container {
+.model-page-container {
     width: 100%;
-    height: 30rem;
+    height: 100rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .model-page-header-image {
-    margin-top: 3.8rem;
     width: 100%;
-    height: 5rem;
+    height: auto;
 }
 
 .model-page-header-image img {
@@ -288,31 +291,61 @@ body {
     height: auto;
 }
 
-.model-page-header-title {
-    width: 80%;
-    margin-top: -5%;
-    margin-left: 5%;
-    font-size: 2.4vw;
-    color: black;
-    letter-spacing: 0.2rem;
-    height: 10rem;
-}
+/*model-page-info-section*/
 
-.model-page-header-title a {
-    font-size: 1rem;
-}
-
-.model-page-header-info-section {
+.model-page-info-section {
     width: 100%;
-    margin-top: 10rem;
+    height: auto;
+    background: #eae5e5;
+    margin-top: -0.2rem;
     display: flex;
     flex-direction: row;
-    color: black;
 }
 
-.header-image-info-whitespace {
-    width: 60%;
+.model-page-info-menu-section {
+    width: 30%;
+    height: auto;
+    margin-left: 5%;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
+
+.model-page-info-menu-section-box {
+    width: 30%;
+    /* border: 1px solid red; */
+    height: 100%;
+}
+
+.model-page-info-button-section {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.model-page-info-price-section {
+    width: 30%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.model-page-info-price-section-box { 
+    width: 30%;
+    padding: 1rem;
+}
+
+/*END model-page-info-section*/
+
+
 
 .header-image-info {
     width: 10%;
@@ -321,32 +354,6 @@ body {
 .header-image-info h3 {
     font-size: 1rem;
     letter-spacing: 0.1rem;
-}
-
-/*Interior Model page*/
-
-.model-page-interior {
-    width: 100%;
-    height: 40rem;
-}
-
-.interior-title {
-    text-align: center;
-    font-size: 2rem;
-    letter-spacing: 0.1rem;
-}
-
-.interior-bg-image {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-}
-
-.interior-bg-image img {
-    width: 100%;
-    height: auto;
 }
 
 .debug {
@@ -363,9 +370,3 @@ body {
 .debug3 {
     border: 1px solid yellow;
 }
-
-
-
-
-
-

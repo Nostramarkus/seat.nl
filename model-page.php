@@ -31,17 +31,61 @@ $number = $_GET["number"];
     foreach ($data as $row)
     {   
         echo
-            '<div class="model-page-header-image">
-            <img alt="img-header" src="' .$row['headerImg'].'"/>
-            </div>  
-            <div class="model-page-header-title">
-            <h1>'.$row['modelTitle'].'</h1>
+            '<div class="model-page-container">
+                <div class="model-page-header-image">
+                    <img alt="img-header" src="' .$row['headerImg'].'"/>
+                </div>  
+                <div class="model-page-info-section">
+                    <div class="model-page-info-menu-section">
+                        <div class="model-page-info-menu-section-box">
+                            <a href="#">menu1</a>
+                        </div>
+                        <div class="model-page-info-menu-section-box">
+                            <a href="#">menu2</a>
+                        </div>
+                        <div class="model-page-info-menu-section-box">
+                            <a href="#">menu3</a>
+                        </div>
+                        <div class="model-page-info-menu-section-box">
+                            <a href="#">menu4</a>
+                        </div>
+                    </div>
+                    <div class="model-page-info-button-section">
+                        <a class="button-header" href="'.$row['testDriveLink'].'" target="_blank">Boek proefrit</a>
+                        <a class="button-header" href="'.$row['testDriveLink'].'" target="_blank">Stel samen</a>
+                    </div>
+                    <div class="model-page-info-price-section">
+                        <div class="model-page-info-price-section-box">
+                        Prijs:<br> €'.$row['price'].'
+                        </div>
+                        <div class="model-page-info-price-section-box">
+                        Private Lease:<br> €'.$row['price'].'
+                        </div>
+                        <div class="model-page-info-price-section-box">
+                        Bijtelling:<br>  €'.$row['price'].'
+                        </div>
+                        <div class="model-page-info-price-section-box">
+                        Garantie:<br> €'.$row['price'].'
+                        </div>
+               
+                    </div>
+                </div> 
+            </div>';
+    }  
+?>
+
+
+
+
+
+
+<!-- 
+<div class="header-image-info-button">
             <a class="button-header" href="'.$row['testDriveLink'].'" target="_blank">Nu proefrijden</a>
-            </div>    
+            <a class="button-header" href="'.$row['testDriveLink'].'" target="_blank">Nu proefrijden</a>
             </div>
-            <div class="model-page-header-info-section">
-            <div class="header-image-info-whitespace">
-            </div> 
+
+
             <div class="header-image-info">
             <h3>prijs</h3>
             € '.$row['price'].'
@@ -57,30 +101,8 @@ $number = $_GET["number"];
             <div class="header-image-info">
             <h3>Garantie</h3>
             '.$row['price'].'
-            </div>        
-            </div>  
-            
-            <div class="model-page-interior">
-            <div class="interior-title">
-            <h1>Interieur van de SEAT '.$row['model'].'</h1>
-            </div>
-            <div class="interior-bg-image">
-            <img src="' .$row['interiorImg'].'" alt="interior '.$row['model'].'">
-            </div>';
-    }  
-?>
-
-
-
-
-
-
-
-
-
-
-    
-
+            </div> 
+ -->
 
 
 
