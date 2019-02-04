@@ -7,10 +7,10 @@
     <!--CSS STYLE-->
     <link rel="stylesheet" type="text/css" href="css/style-desktop-version.css">
     <link href="css/interactive-image.css" rel="stylesheet">
-    <!--JAVASCRIPT-->
-    <style rel="js/navbar.js"></style>
-    <style rel="js/image-slider.js"></style>
-    <script src="js/interior.js"></script>
+    <!--JAVASCRIPT PARALLAX SCROLL-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/scrollMagic.min.js"></script>
+    <script src="js/main.js"></script>
     <!--GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <title>Seat Nederland</title>
@@ -24,7 +24,7 @@ include "db_connection.php";
 
 $number = $_GET["number"];
 
-    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease, headerImg, testDriveLink, interiorImg FROM modellen WHERE number='$number'";
+    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease, headerImg, testDriveLink, carImage1, interiorImg FROM modellen WHERE number='$number'";
 
     $data = $conn->query($sql);  
 
@@ -32,7 +32,7 @@ $number = $_GET["number"];
     {   
         echo
             '<div class="model-page-container">
-                <div class="model-page-header-image">
+                <div class="model-page-header-image" id="parralex-1">
                     <img alt="img-header" src="' .$row['headerImg'].'"/>
                 </div>  
                 <div class="model-page-info-section">
@@ -59,7 +59,7 @@ $number = $_GET["number"];
                         Prijs:<br> €'.$row['price'].'
                         </div>
                         <div class="model-page-info-price-section-box">
-                        Private Lease:<br> €'.$row['price'].'
+                        Private Lease:<br> €'.$row['pricePrivateLease'].'
                         </div>
                         <div class="model-page-info-price-section-box">
                         Bijtelling:<br>  €'.$row['price'].'
@@ -67,42 +67,27 @@ $number = $_GET["number"];
                         <div class="model-page-info-price-section-box">
                         Garantie:<br> €'.$row['price'].'
                         </div>
-               
                     </div>
                 </div> 
+
+                <div class="model-page-car-introduction" id="parralex-2">
+                    <div class="model-page-car-introduction-image">
+                    <img alt="Car Image 1" src="' .$row['carImage1'].'"/>
+                    </div>
+                    <div class="model-page-car-introduction-textarea debug1">
+                        <h2>'.$row['model'].'</h2>
+                        <h1>Generaties aan dynamiek</h1>
+                        <p>We hebben de SEAT Ibiza in een nieuwe jasje gestoken. Het icoon die al 30 jaar op onze wegen is te vinden, was toe aan een welverdiende upgrade. Met die upgrade rolt de vijfde generatie Ibiza’s van de band en is hij nog ruimer, comfortabeler, slimmer en efficiënter dan ooit tevoren.
+                        </p>
+                    </div>
+                </div>
+                
+
+             
+
             </div>';
     }  
 ?>
-
-
-
-
-
-
-<!-- 
-<div class="header-image-info-button">
-            <a class="button-header" href="'.$row['testDriveLink'].'" target="_blank">Nu proefrijden</a>
-            <a class="button-header" href="'.$row['testDriveLink'].'" target="_blank">Nu proefrijden</a>
-            </div>
-
-
-            <div class="header-image-info">
-            <h3>prijs</h3>
-            € '.$row['price'].'
-            </div>
-            <div class="header-image-info">
-            <h3>Private Lease</h3>
-            € '.$row['pricePrivateLease'].'
-            </div>  
-            <div class="header-image-info">
-            <h3>Bijtelling</h3>
-            € '.$row['price'].'
-            </div>  
-            <div class="header-image-info">
-            <h3>Garantie</h3>
-            '.$row['price'].'
-            </div> 
- -->
 
 
 

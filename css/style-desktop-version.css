@@ -16,7 +16,6 @@ black #00000 , orange #F47a14 , white #fffff , grey #fbfbfb , Google font: Ralew
 body {
     font-family: 'Raleway';
     margin: 0;
-    background: #f4f4f4;
 }
 
 /*NAVBAR*/
@@ -345,16 +344,58 @@ body {
 
 /*END model-page-info-section*/
 
+/*model page parralex section*/
 
-
-.header-image-info {
-    width: 10%;
+.model-page-car-introduction {
+    margin-top: 3%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
 }
 
-.header-image-info h3 {
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
+.model-page-car-introduction-image {
+    width: 60%;
 }
+
+.model-page-car-introduction-image img {
+    width: 100%;
+    height: auto;
+}
+
+.model-page-car-introduction-textarea {
+    margin-top: 6vw;
+    margin-left: 6vw;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.model-page-car-introduction-textarea h1 {
+    margin-top: -1vw;
+    /* margin-bottom: 1vw; */
+    color: orange;
+    font-size: 2.5vw;
+}
+
+.model-page-car-introduction-textarea h2 {
+    color: grey;
+    font-size: 1.5vw;
+}
+
+.model-page-car-introduction-textarea p {
+    margin-top: -1.5vw;
+    letter-spacing: 0.3;
+    width: 80%;
+
+}
+
+
+/*END model page parralex section*/
+
+
+
 
 .debug {
     border: 2px solid red;
