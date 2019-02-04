@@ -74,11 +74,13 @@ $number = $_GET["number"];
                     <div class="model-page-car-introduction-image">
                     <img alt="Car Image 1" src="' .$row['carImage1'].'"/>
                     </div>
-                    <div class="model-page-car-introduction-textarea debug1">
-                        <h2>'.$row['model'].'</h2>
-                        <h1>Generaties aan dynamiek</h1>
-                        <p>We hebben de SEAT Ibiza in een nieuwe jasje gestoken. Het icoon die al 30 jaar op onze wegen is te vinden, was toe aan een welverdiende upgrade. Met die upgrade rolt de vijfde generatie Ibiza’s van de band en is hij nog ruimer, comfortabeler, slimmer en efficiënter dan ooit tevoren.
-                        </p>
+                    <div class="model-page-car-introduction-textarea">
+                        <div class="model-page-car-introduction-textarea-text">
+                            <h2>'.$row['model'].'</h2>
+                            <h1>Generaties aan dynamiek</h1>
+                            <p>We hebben de SEAT Ibiza in een nieuwe jasje gestoken. Het icoon die al 30 jaar op onze wegen is te vinden, was toe aan een welverdiende upgrade. Met die upgrade rolt de vijfde generatie Ibiza’s van de band en is hij nog ruimer, comfortabeler, slimmer en efficiënter dan ooit tevoren.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 
