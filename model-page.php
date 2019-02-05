@@ -23,7 +23,7 @@ include "db_connection.php";
 
 $number = $_GET["number"];
 
-    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease, headerImg, testDriveLink, carImage1, interiorImg, carIntroductionTitle, carIntroductionImage FROM modellen WHERE number='$number'";
+    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease, headerImg, testDriveLink, carImage1, interiorImg, carIntroductionTitle, carIntroductionImage, carImage2, carImage3, carConnectivityTitle, carConnectivityImage, carAudioTitle, carAudioImage  FROM modellen WHERE number='$number'";
 
     $data = $conn->query($sql);  
 
@@ -47,6 +47,33 @@ $number = $_GET["number"];
                         </div>
                     </div>
                 </div>
+
+                <div class="model-page-car-connectivity">
+                <div class="model-page-car-connectivity-textarea">
+                    <div class="model-page-car-connectivity-textarea-text">
+                        <h2>'.$row['model'].'</h2>
+                        <h1>'.$row['carConnectivityTitle'].'</h1>
+                        <p>'.$row['carConnectivityImage'].'</p>
+                    </div>
+                </div>
+                <div class="model-page-car-connectivity-image">
+                    <img alt="Car Image 2" src="' .$row['carImage2'].'"/>
+                </div>
+            </div>
+
+            <div class="model-page-car-audio">
+            <div class="model-page-car-audio-image">
+                <img alt="Car Image 1" src="' .$row['carImage3'].'"/>
+            </div>
+            <div class="model-page-car-audio-textarea">
+                <div class="model-page-car-audio-textarea-text">
+                    <h2>'.$row['model'].'</h2>
+                    <h1>'.$row['carAudioTitle'].'</h1>
+                    <p>'.$row['carAudioImage'].'</p>
+                </div>
+            </div>
+        </div>
+            
             </div>';
     }  
 ?>

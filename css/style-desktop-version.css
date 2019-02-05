@@ -358,6 +358,7 @@ body {
 
 /*model page parralex section*/
 
+/*introduction*/
 .model-page-car-introduction {
     margin-top: 3%;
     width: 100%;
@@ -404,7 +405,105 @@ body {
     margin-top: -1.5vw;
     letter-spacing: 0.3;
     width: 80%;
+}
 
+/*CONNECTIVITY*/
+.model-page-car-connectivity {
+    margin-top: 3%;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+}
+
+.model-page-car-connectivity-image {
+    width: 60%;
+}
+
+.model-page-car-connectivity-image img {
+    width: 100%;
+    height: auto;
+}
+
+.model-page-car-connectivity-textarea {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    margin-left: 5%;
+}
+
+.model-page-car-connectivity-textarea-text {
+    width: 100%;
+}
+
+.model-page-car-connectivity-textarea h1 {
+    margin-top: -1vw;
+    color: orange;
+    font-size: 2.9vw;
+}
+
+.model-page-car-connectivity-textarea h2 {
+    color: grey;
+    font-size: 1.5vw;
+}
+
+.model-page-car-connectivity-textarea p {
+    margin-top: -1.5vw;
+    letter-spacing: 0.3;
+    width: 80%;
+}
+
+/*audio*/
+.model-page-car-audio {
+    margin-top: 3%;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+}
+
+.model-page-car-audio-image {
+    width: 60%;
+}
+
+.model-page-car-audio-image img {
+    width: 100%;
+    height: auto;
+}
+
+.model-page-car-audio-textarea {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+}
+
+.model-page-car-audio-textarea-text {
+    width: 100%;
+}
+
+.model-page-car-audio-textarea h1 {
+    margin-top: -1vw;
+    color: orange;
+    font-size: 2.9vw;
+}
+
+.model-page-car-audio-textarea h2 {
+    color: grey;
+    font-size: 1.5vw;
+}
+
+.model-page-car-audio-textarea p {
+    margin-top: -1.5vw;
+    letter-spacing: 0.3;
+    width: 80%;
 }
 
 /*END model page parralex section*/
