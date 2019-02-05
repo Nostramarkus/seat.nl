@@ -195,20 +195,6 @@ body {
 
 /*END Looking for style*/
 
-/*Index New model section*/
-
-.index-new-model {
-    width: 100%;
-    /* height: 20vh; */
-    background: grey;
-}
-
-.index-new-model-bg-image {
-    
-    /* background: url('../img/img-landingpage/ateca-header.jpg') */
-}
-
-
 /*model-overview.php style*/
 
 /*title*/
@@ -271,6 +257,7 @@ body {
 .productcard-title p {
     margin-top: -1rem;
     letter-spacing: 0.1rem;
+    font-size: 1vw;
 }
 
 .productcard-image {
