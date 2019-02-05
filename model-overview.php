@@ -27,7 +27,7 @@ include "include-basic-files/navbar-fixed.html";
     <div class="header-filter">
     <a class="button-header" href="#">Filter</a>
     </div>
-</div>
+
 
 <div class="model-overview-productcard-container">
 <?php
@@ -60,6 +60,6 @@ include "db_connection.php";
     }  
 ?>
 </div>
-
+</div>
 </body>    
 </html>
