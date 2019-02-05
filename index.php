@@ -15,7 +15,7 @@
 </head>
 <body>
    <?php
-    include "include-basic-files/navbar.html";
+    include "include-basic-files/navbar-fixed.html";
     ?>
 
 <!--HEADER-->
@@ -67,6 +67,8 @@
     </div>
 </div>  
     <!--END: LOOKING FOR SECTION-->
+
+
 
 </body>    
 </html>

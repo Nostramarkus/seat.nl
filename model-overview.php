@@ -17,7 +17,7 @@
 </head>
 <body>
 <?php
-include "include-basic-files/navbar.html";
+include "include-basic-files/navbar-fixed.html";
 ?>
 
 <div class="model-overview-title-container">
