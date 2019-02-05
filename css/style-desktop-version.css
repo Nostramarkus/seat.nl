@@ -130,6 +130,18 @@ body {
     text-decoration: none;
 }
 
+
+.index-header-title {
+    margin-right: 5%;
+    width: 40%;
+    height: 50vh;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /*Looking for style*/
 
 .looking-for-title h3 {
@@ -180,6 +192,22 @@ body {
     text-align: center;
     height: auto;
 }
+
+/*END Looking for style*/
+
+/*Index New model section*/
+
+.index-new-model {
+    width: 100%;
+    /* height: 20vh; */
+    background: grey;
+}
+
+.index-new-model-bg-image {
+    
+    /* background: url('../img/img-landingpage/ateca-header.jpg') */
+}
+
 
 /*model-overview.php style*/
 

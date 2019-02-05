@@ -26,12 +26,14 @@
         <a class="button-header" href="#">Ontdek nu</a>
     </div>
 </div>
+
+
 <!--LOOKING FOR SECTION-->
 <div class="looking-for-title">
     <h3>Ik ben op zoek naar</h3>
 </div>
 <div class="looking-for">
-<div class="looking-for-items">
+    <div class="looking-for-items">
     <div class="looking-for-img">
         <img src="img/img-landingpage/landingpage-img1.png" alt="Models">
     </div>    
@@ -66,9 +68,8 @@
         <h5>Dealers</h5>
     </div>
 </div>  
+<div>
     <!--END: LOOKING FOR SECTION-->
-
-
 
 </body>    
 </html>
