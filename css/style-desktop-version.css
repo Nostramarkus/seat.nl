@@ -121,16 +121,6 @@ body {
     font-weight: bolder;
 }  
 
-.button-header {
-    background-color: #F47a14;
-    padding: 18px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
-
 .index-header-title {
     margin-right: 5%;
     width: 40%;
@@ -304,14 +294,74 @@ body {
     flex-direction: column;
 }
 
-.model-page-header-image {
+.model-page-image {
     width: 100%;
     height: auto;
 }
 
-.model-page-header-image img {
+.model-page-image img {
     width: 100%;
     height: auto;
+}
+
+/*Black header section*/
+.model-page-header {
+    margin-top: -0.4rem;
+    width: 100%;
+    height: 15vw;
+    background: black;
+}
+
+.model-page-header-price-button-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.model-page-header-title {
+    color: white;
+    font-size: 2vw;
+    letter-spacing: 0.1rem;
+    width: 50%;
+    margin-left: 5%;
+}
+
+.model-page-header-price-section {
+    color: white;
+    margin-top: -2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 5%;
+}
+
+.model-page-header-price {
+    letter-spacing: 0.1rem; 
+    width: 20%;  
+    border-right: 0.09vh solid white;
+}
+
+.model-page-header-price h2 {
+    font-size: 0.9vw;
+}
+
+.model-page-header-price h3{
+    margin-top: -5%; 
+    font-size: 1.8vw;
+    color: #F47a14;
+}
+
+.model-price-header-button-section {
+    width: 50%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.model-price-header-button {
+    width: 70%;
 }
 
 /*model-page-info-section*/
@@ -508,6 +558,24 @@ body {
 }
 
 /*END model page parralex section*/
+
+/*BUTTON*/
+
+.button {
+    background-color: #F47a14;
+    padding: 18px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.button-big {
+    padding: 18px 100px;
+}
+
+/*END BUTTON*/
+
 
 
 .debug {

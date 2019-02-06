@@ -23,7 +23,7 @@ include "db_connection.php";
 
 $number = $_GET["number"];
 
-    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease, headerImg, testDriveLink, carImage1, interiorImg, carIntroductionTitle, carIntroductionImage, carImage2, carImage3, carConnectivityTitle, carConnectivityImage, carAudioTitle, carAudioImage  FROM modellen WHERE number='$number'";
+    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease, priceBijtelling, warranty, headerImg, testDriveLink, carImage1, interiorImg, carIntroductionTitle, carIntroductionImage, carImage2, carImage3, carConnectivityTitle, carConnectivityImage, carAudioTitle, carAudioImage  FROM modellen WHERE number='$number'";
 
     $data = $conn->query($sql);  
 
@@ -31,9 +31,41 @@ $number = $_GET["number"];
     {   
         echo
             '<div class="model-page-container">
-                <div class="model-page-header-image">
+                <div class="model-page-image">
                     <img alt="img-header" src="' .$row['headerImg'].'"/>
                 </div>  
+                <div class="model-page-header">
+                    <div class="model-page-header-title">
+                        <h1>SEAT '.$row['model'].'</h1>
+                    </div>
+                   
+                    <div class="model-page-header-price-button-section">
+                        <div class="model-page-header-price-section">
+                            <div class="model-page-header-price ">
+                                <h2>Vanafprijs:</h2>
+                                <h3>€ '.$row['price'].'</h3>
+                            </div>
+                            <div class="model-page-header-price ">
+                                <h2>Private Lease:</h2>
+                                <h3>€ '.$row['pricePrivateLease'].'</h3>
+                            </div>
+                            <div class="model-page-header-price">
+                                <h2>Bijtelling:</h2>
+                                <h3>€ '.$row['priceBijtelling'].'</h3>
+                            </div>
+                            <div class="model-page-header-price ">
+                                <h2>Garantie:</h2>
+                                <h3>'.$row['warranty'].' jaar</h3>
+                            </div>
+                        </div>
+
+                        <div class="model-price-header-button-section">
+                            <div class="model-price-header-button">
+                                <a class="button button-big" href="'.$row['testDriveLink'].'"target="_blank">Nu proefrijden</a>
+                            </div>
+                        </div>
+                    </div>
+                
                 
                 <div class="model-page-car-introduction">
                     <div class="model-page-car-introduction-image">
@@ -73,8 +105,12 @@ $number = $_GET["number"];
                 </div>
             </div>
         </div>
+
+        <div class="model-page-car-configurator">
+        <div class=""
+        </div>
             
-            </div>';
+        </div>';
     }  
 ?>
 
