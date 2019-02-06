@@ -18,19 +18,19 @@
 
 <div class="model-page-header-container">
 <?php
-include "include-basic-files/navbar.html";
+include "include-basic-files/navbar-fixed.html";
 include "db_connection.php";
 
 $number = $_GET["number"];
 
-    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease, priceBijtelling, warranty, headerImg, testDriveLink, carImage1, interiorImg, carIntroductionTitle, carIntroductionImage, carImage2, carImage3, carConnectivityTitle, carConnectivityImage, carAudioTitle, carAudioImage  FROM modellen WHERE number='$number'";
+    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease, priceBijtelling, warranty, headerImg, testDriveLink, carImage1, interiorImg, carIntroductionTitle, carIntroductionImage, carImage2, carImage3, carConnectivityTitle, carConnectivityImage, carAudioTitle, carAudioImage, color1, color2, color3, color4  FROM modellen WHERE number='$number'";
 
     $data = $conn->query($sql);  
 
     foreach ($data as $row)
     {   
         echo
-            '<div class="model-page-container">
+            '<div class="model-page-container ">
                 <div class="model-page-image">
                     <img alt="img-header" src="' .$row['headerImg'].'"/>
                 </div>  
@@ -104,17 +104,15 @@ $number = $_GET["number"];
                     <p>'.$row['carAudioImage'].'</p>
                 </div>
             </div>
-        </div>
-
-        <div class="model-page-car-configurator">
-        <div class=""
-        </div>
-            
         </div>';
     }  
 ?>
-
-
+<!-- 
+<button onclick="filter('$_GET['color1']')">Wit</button>
+<button onclick="filter('$_GET['color2']')">Zwart</button>
+<button onclick="filter('$_GET['color3']')">Blauw</button>
+<button onclick="filter('$_GET['color4']')">Oranje</button> -->
 
 </body>    
 </html>
+

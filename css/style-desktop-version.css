@@ -407,13 +407,11 @@ body {
 
 /*END model-page-info-section*/
 
-/*model page parralex section*/
 
 /*introduction*/
 .model-page-car-introduction {
     margin-top: 3%;
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     flex-direction: row;
 }
@@ -462,7 +460,6 @@ body {
 .model-page-car-connectivity {
     margin-top: 3%;
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     flex-direction: row;
 }
@@ -512,7 +509,6 @@ body {
 .model-page-car-audio {
     margin-top: 3%;
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     flex-direction: row;
 }
@@ -557,7 +553,11 @@ body {
     width: 80%;
 }
 
-/*END model page parralex section*/
+/*model-page-car-configurator color and wheels*/
+
+.model-page-car-configurator {
+
+}
 
 /*BUTTON*/
 
@@ -591,4 +591,9 @@ body {
 }
 .debug3 {
     border: 1px solid yellow;
+}
+
+#filter {
+    width: 100%;
+    height: 40vh;
 }

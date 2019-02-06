@@ -1,3 +1,13 @@
 <div class="model-page-parallex-image" id="parralex-3">
                     <img alt="img-header" src="' .$row['headerImg'].'"/>
                 </div>
+
+                <div class="model-page-car-configurator">
+        <h1>Bekijk hier alle kleuren van de '.$row['model'].'</h1>
+            <div class="model-page-car-configurator-featured-img"
+            <img alt="img-header" src="' .$row['headerImg'].'"/>
+                <img id="img" <img alt="img-header" src="' .$row['color1'].'"/>"
+            </div>
+            <div class="model-page-car-configurator-thumb-img">
+            <img class="active" 
+        </div>

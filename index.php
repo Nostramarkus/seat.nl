@@ -23,7 +23,7 @@
     <div class="index-header-titel">
         <h1>De SEAT Tarraco.</h1>
         <h3>Onze grootste SUV ooit</h3>
-        <a class="button-header" href="#">Ontdek nu</a>
+        <a class="button" href="#">Ontdek nu</a>
     </div>
 </div>
 
