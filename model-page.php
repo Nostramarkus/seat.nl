@@ -103,15 +103,21 @@ $number = $_GET["number"];
                     <h1>'.$row['carAudioTitle'].'</h1>
                     <p>'.$row['carAudioImage'].'</p>
                 </div>
-            </div>
-        </div>';
+            </div>   
+        </div>
+        
+
+        <h1>Bekijk hier alle kleuren van de SEAT '.$row['model'].'</h1>
+
+        <img alt="img-header" src="' .$row['color1'].'"/>           <br><br><br>
+        
+        <a class="button" href="'.$row['color1'].'">Wit</a>
+        <a class="button" href="'.$row['color2'].'">Zwart</a>
+        <a class="button" href="'.$row['color3'].'">Blauw</a>
+        <a class="button" href="'.$row['color4'].'">Oranje</a> 
+        <img src="' .$row['color1'].'" width="200" height="196" onmouseover="enlarge(this)">';
     }  
 ?>
-<!-- 
-<button onclick="filter('$_GET['color1']')">Wit</button>
-<button onclick="filter('$_GET['color2']')">Zwart</button>
-<button onclick="filter('$_GET['color3']')">Blauw</button>
-<button onclick="filter('$_GET['color4']')">Oranje</button> -->
 
 </body>    
 </html>

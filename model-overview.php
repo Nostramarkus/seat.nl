@@ -8,9 +8,14 @@
     <link rel="stylesheet" type="text/css" href="css/style-desktop-version.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css"> 
     <!--JAVASCRIPT-->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
     <style rel="js/navbar.js"></style>
     <style rel="js/image-slider.js"></style>
     <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
     <!--GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <title>Seat Nederland</title>
@@ -22,44 +27,56 @@ include "include-basic-files/navbar-fixed.html";
 
 <div class="model-overview-title-container">
     <div class="model-overview-title">
-    <h2>KIES UW SEAT</h2>
+        <h2>KIES UW SEAT</h2>
+        <button onclick="filterAll('car')">Alles</button>
+        <button onclick="filter('stadsauto')">Stadsauto</button>
+        <button onclick="filter('hatchback')">Hatchback</button>
+        <button onclick="filter('suv')">SUV</button>
+        <button onclick="filter('mpv')">MPV</button>   
     </div>
-    <div class="header-filter">
-    <a class="button" href="#">Filter</a>
+  
+           
+    
+
+        <div class="model-overview-productcard-container" id="filter">
+        
+        <?php
+        include "db_connection.php";
+
+            $sql = "SELECT model, number, modelTitle, bodyType, modelImg, price, pricePrivateLease, priceBijtelling, warranty, headerImg, testDriveLink, carImage1, interiorImg, carIntroductionTitle, carIntroductionImage, carImage2, carImage3, carConnectivityTitle, carConnectivityImage, carAudioTitle, carAudioImage, color1, color2, color3, color4  FROM modellen";
+            
+            $data = $conn->query($sql);  
+
+            foreach ($data as $row)
+            {   
+                echo
+                    
+                    '<div class="model-overview-productcard animated fadeIn">
+                        <div class="productcard-title">
+                            <h4>'.$row['model'] . '</h4>
+                            <p>'.$row['modelTitle'] . '</p>
+                        </div>
+                        <div class="productcard-image">
+                            <img alt="Img-car" src="' .$row['modelImg'].'"/>
+                        </div>
+                        <div class="productcard-footer">
+                            <div class="productcard-footer-price">
+                                <p>Verkrijgbaar vanaf <span style="color: #F47a14">€'.$row['price'] . '</span> of private<br> lease \'m vanaf <span style="color: #F47a14">€'.$row['pricePrivateLease'] . '</span> pm.</p> 
+                            </div>
+                            <div class="productcard-footer-button">
+                                <a class="button" href="model-page.php?number='.$row['number'] .'">Ontdek de '.$row['model'] . '</a>
+                            </div>
+                        </div>  
+                    </div>';
+            }  
+        ?>
+
     </div>
-
-
-<div class="model-overview-productcard-container">
-<?php
-include "db_connection.php";
-
-    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease FROM modellen";
-
-    $data = $conn->query($sql);  
-
-    foreach ($data as $row)
-    {   
-        echo
-            '<div class="model-overview-productcard animated fadeIn">
-            <div class="productcard-title">
-            <h4>'.$row['model'] . '</h4>
-            <p>'.$row['modelTitle'] . '</p>
-            </div>
-            <div class="productcard-image">
-            <img alt="Img-car" src="' .$row['modelImg'].'"/>
-            </div>
-            <div class="productcard-footer">
-            <div class="productcard-footer-price">
-            <p>Verkrijgbaar vanaf <span style="color: #F47a14">€'.$row['price'] . '</span> of private<br> lease \'m vanaf <span style="color: #F47a14">€'.$row['pricePrivateLease'] . '</span> pm.</p> 
-            </div>
-            <div class="productcard-footer-button">
-                <a class="button" href="model-page.php?number='.$row['number'] .'">Ontdek de '.$row['model'] . '</a>
-            </div>
-            </div>  
-            </div>';
-    }  
-?>
 </div>
-</div>
+
+
 </body>    
 </html>
+
+
+
