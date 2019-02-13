@@ -197,11 +197,22 @@ body {
     margin-left: 5%;
     font-size: 3rem;
 }
+/*Filter-overview*/
+
+#filter-overview {
+    margin-left: 5%;
+    width: 90%;
+    /* height: 5rem; */
+    background: lightgrey;
+    display: none;
+}
 
 
 /*Productcard*/
 
 .model-overview-productcard-container {
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
     width: 100%;
     display: flex;
     flex-direction: row;

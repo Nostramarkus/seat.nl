@@ -104,21 +104,9 @@ $number = $_GET["number"];
                     <p>'.$row['carAudioImage'].'</p>
                 </div>
             </div>   
-        </div>
-        
-
-        <h1>Bekijk hier alle kleuren van de SEAT '.$row['model'].'</h1>
-
-        <img alt="img-header" src="' .$row['color1'].'"/>           <br><br><br>
-        
-        <a class="button" href="'.$row['color1'].'">Wit</a>
-        <a class="button" href="'.$row['color2'].'">Zwart</a>
-        <a class="button" href="'.$row['color3'].'">Blauw</a>
-        <a class="button" href="'.$row['color4'].'">Oranje</a> 
-        <img src="' .$row['color1'].'" width="200" height="196" onmouseover="enlarge(this)">';
+        </div>';
     }  
 ?>
-
 </body>    
 </html>
 

@@ -8,10 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style-desktop-version.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css"> 
     <!--JAVASCRIPT-->
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style rel="js/navbar.js"></style>
     <style rel="js/image-slider.js"></style>
     <script src="js/main.js"></script>
@@ -28,11 +25,21 @@ include "include-basic-files/navbar-fixed.html";
 <div class="model-overview-title-container">
     <div class="model-overview-title">
         <h2>KIES UW SEAT</h2>
-        <button onclick="filterAll('car')">Alles</button>
-        <button onclick="filter('stadsauto')">Stadsauto</button>
-        <button onclick="filter('hatchback')">Hatchback</button>
-        <button onclick="filter('suv')">SUV</button>
-        <button onclick="filter('mpv')">MPV</button>   
+        <button class="button" id="openFilterOverview">filter</button>
+    </div>
+
+    <div id="filter-overview">
+        <div class="filter-buttons-title">
+            <h2>Maak hieronder u keuze.</h2>
+        </div>
+        <div class="filter-buttons">
+            <button class="button" onclick="filterAll('car')">Laat alles zien</button>
+            <button class="button" onclick="filter('stadsauto')">Stadsauto</button>
+            <button class="button" onclick="filter('hatchback')">Hatchback</button>
+            <button class="button" onclick="filter('suv')">SUV</button>
+            <button class="button" onclick="filter('mpv')">MPV</button>   
+            <button class="button" id="hideFilterOverview">sluit</button>
+        </div>
     </div>
   
            
@@ -70,7 +77,6 @@ include "include-basic-files/navbar-fixed.html";
                     </div>';
             }  
         ?>
-
     </div>
 </div>
 
