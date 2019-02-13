@@ -9,8 +9,6 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css"> 
     <!--JAVASCRIPT-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <style rel="js/navbar.js"></style>
-    <style rel="js/image-slider.js"></style>
     <script src="js/main.js"></script>
     <script src="js/filter.js"></script>
     <!--GOOGLE FONT-->
@@ -29,16 +27,21 @@ include "include-basic-files/navbar-fixed.html";
     </div>
 
     <div id="filter-overview">
-        <div class="filter-buttons-title">
+        <div class="filter-overview-title-and-close-button">
             <h2>Maak hieronder u keuze.</h2>
-        </div>
-        <div class="filter-buttons">
-            <button class="button" onclick="filterAll('car')">Laat alles zien</button>
-            <button class="button" onclick="filter('stadsauto')">Stadsauto</button>
-            <button class="button" onclick="filter('hatchback')">Hatchback</button>
-            <button class="button" onclick="filter('suv')">SUV</button>
-            <button class="button" onclick="filter('mpv')">MPV</button>   
             <button class="button" id="hideFilterOverview">sluit</button>
+        </div>
+        <div class="filter-overview-filter-buttons">
+            <div class="filter-overview-button-show-all">
+                <button class="button" onclick="filterAll('car')">Laat alles zien</button>
+            </div>
+            <div class="filter-overview-button-filter">
+                Carrosserievarianten
+                <button class="button" onclick="filter('stadsauto')">Stadsauto</button>
+                <button class="button" onclick="filter('hatchback')">Hatchback</button>
+                <button class="button" onclick="filter('suv')">SUV</button>
+                <button class="button" onclick="filter('mpv')">MPV</button>   
+            </div>
         </div>
     </div>
   

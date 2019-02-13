@@ -203,8 +203,37 @@ body {
     margin-left: 5%;
     width: 90%;
     /* height: 5rem; */
-    background: lightgrey;
+    background: #f9f9f9;
     display: none;
+}
+
+.filter-overview-title-and-close-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter-overview-filter-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.filter-overview-button-show-all {
+    width: 50%;
+}
+
+.filter-overview-button-filter {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.filter-overview-button-filter button {
+  
 }
 
 
@@ -557,11 +586,11 @@ body {
     width: 80%;
 }
 
-/*model-page-car-configurator color and wheels*/
+/*DEALERS*/
 
-.model-page-car-configurator {
 
-}
+
+/*END: DEALERS*/
 
 /*BUTTON*/
 
