@@ -15,10 +15,10 @@
     <style rel="js/navbar.js"></style>
     <style rel="js/image-slider.js"></style>
     <script src="js/main.js"></script>
-    <script src="js/filter.js"></script>
+    <script src="js/search.js"></script>
     <!--GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-    <title>Seat Nederland</title>
+    <title>Dealers van SEAT Nederland </title>
 </head>
 <body>
 <?php
@@ -26,3 +26,45 @@ include "include-basic-files/navbar-fixed.html";
 ?>
 <br><br><br><br><br><br>
 <h1>Vind een SEAT dealer in de buurt.</h1>
+
+          <input type="text" id="searchDealer" placeholder="Zoek op woonplaats">
+            <button onClick="searchDealer()">zoek</button>
+
+        <div class="dealer-info-card-container" id="searchResult">
+        
+        <?php
+        include "db_connection.php";
+
+            $sql = "SELECT * FROM dealers";
+            
+            $data = $conn->query($sql);  
+
+            foreach ($data as $row)
+            {   
+                echo
+
+                '<div class="dealer-info-card animated fadeIn">
+                    <div class="dealer-info-card-title">
+                      <h1>'.$row['name'] . '</h1>
+                    </div>
+                    <div class="dealer-location-contact-section">
+                      <div class="location-contact">
+                        <h2>Adres</h2>
+                        '.$row['streetname'] . '<br>
+                        '.$row['zipcode'] . ' '.$row['city'] . '
+                      </div>
+                      <div class="location-contact">
+                        <h2>Contact</h2>
+                        0'.$row['phonenumber'] . '<br>
+                        '.$row['mailadres'] . '
+                      </div>
+                      <div class="location-button">
+                        <a class="button" href="dealer-detailpage.php?dealerId='.$row['dealerId'] .'">Bekijk details</a>
+                      </div>
+                    </div>
+                </div>
+              </div>';
+                    
+                
+            }  
+        ?>

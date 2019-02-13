@@ -23,7 +23,7 @@ include "db_connection.php";
 
 $number = $_GET["number"];
 
-    $sql = "SELECT model, number, modelTitle, modelImg, price, pricePrivateLease, priceBijtelling, warranty, headerImg, testDriveLink, carImage1, interiorImg, carIntroductionTitle, carIntroductionImage, carImage2, carImage3, carConnectivityTitle, carConnectivityImage, carAudioTitle, carAudioImage, color1, color2, color3, color4  FROM modellen WHERE number='$number'";
+    $sql = "SELECT * FROM modellen WHERE number='$number'";
 
     $data = $conn->query($sql);  
 

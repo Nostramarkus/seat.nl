@@ -588,7 +588,48 @@ body {
 
 /*DEALERS*/
 
+.dealer-info-card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
+}
+
+.dealer-info-card {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    background: lightgrey;
+    margin: 1%;
+    padding: 15px;
+}
+
+.dealer-info-card-title {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    color: #F47a14;
+}
+
+.dealer-location-contact-section {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.location-contact {
+    width: 33.33%
+}
+
+.location-button {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 /*END: DEALERS*/
 
