@@ -53,7 +53,7 @@ include "include-basic-files/navbar-fixed.html";
         <?php
         include "db_connection.php";
 
-            $sql = "SELECT model, number, modelTitle, bodyType, modelImg, price, pricePrivateLease, priceBijtelling, warranty, headerImg, testDriveLink, carImage1, interiorImg, carIntroductionTitle, carIntroductionImage, carImage2, carImage3, carConnectivityTitle, carConnectivityImage, carAudioTitle, carAudioImage, color1, color2, color3, color4  FROM modellen";
+            $sql = "SELECT * FROM modellen";
             
             $data = $conn->query($sql);  
 

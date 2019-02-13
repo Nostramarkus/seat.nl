@@ -11,6 +11,8 @@
     <style rel="js/image-slider.js"></style>
     <!--GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Seat Nederland</title>
 </head>
 <body>
@@ -19,57 +21,57 @@
     ?>
 
 <!--HEADER-->
-<div class="index-header">
-    <div class="index-header-titel">
-        <h1>De SEAT Tarraco.</h1>
-        <h3>Onze grootste SUV ooit</h3>
-        <a class="button" href="#">Ontdek nu</a>
+<div class="index-container">
+    <div class="index-header ">
+        <div class="index-header-titel">
+            <h1>De SEAT Tarraco.</h1>
+            <h3>Onze grootste SUV ooit</h3>
+            <a class="button" href="model-page.php?number=7">Ontdek nu</a>
+        </div>
+    </div>
+    <!-- <div class="index-header-footer">
+    </div>   -->
+    <!--MODELS-->
+    <div class="index-model-container">
+        <div class="index-model-title">
+            <p>Bekijk hieronder al onze modellen.</p>
+        </div>
+        <div class="index-model-cars-container">
+            <div class="index-model-cars">
+                <img src="img/img-productcard/mii/mii.png" alt="SEAT Mii">
+                <p>SEAT Mii</p>
+            </div>    
+            <div class="index-model-cars">
+                <img src="img/img-productcard/ibiza/ibiza.png" alt="SEAT Ibiza">
+                <p>SEAT Ibiza</p>
+            </div> 
+            <div class="index-model-cars">
+                <img src="img/img-productcard/arona/arona.png" alt="SEAT Arona">
+                <p>SEAT Arona</p>
+            </div> 
+            <div class="index-model-cars">
+                <img src="img/img-productcard/leon/leon-hatchback.png" alt="SEAT Leon">
+                <p>SEAT Leon</p>
+            </div> 
+            <div class="index-model-cars">
+                <img src="img/img-productcard/ateca/ateca.png" alt="SEAT Ateca">
+                <p>SEAT Ateca</p>
+            </div> 
+            <div class="index-model-cars">
+                <img src="img/img-productcard/alhambra/alhambra.png" alt="SEAT Alhambra">
+                <p>SEAT Alhambra</p>
+            </div> 
+            <div class="index-model-cars">
+                <img src="img/img-productcard/tarraco/tarraco.png" alt="SEAT Tarraco">
+                <p>SEAT Tarraco</p>
+            </div> 
+        </div>
+    </div>
+    <a onclick="$('#landingspage-info-section-container').animatescroll({scrollSpeed:2000,easing:'easeOutBounce'});"><span style="font-size: 3rem; color: black;"><i class="fas fa-arrow-circle-down"></i></span></a>
+    
+    <div class="index-about-us">
+        Over SEAT
     </div>
 </div>
-
-
-<!--LOOKING FOR SECTION-->
-<div class="looking-for-title">
-    <h3>Ik ben op zoek naar</h3>
-</div>
-<div class="looking-for">
-    <div class="looking-for-items">
-    <div class="looking-for-img">
-        <img src="img/img-landingpage/landingpage-img1.png" alt="Models">
-    </div>    
-    <div class="looking-for-link-title">
-        <h5>Modellen</h5>
-    </div>
-</div>
-<div class="looking-for-middle-line"></div>  
-<div class="looking-for-items ">
-    <div class="looking-for-img ">
-        <img src="img/img-landingpage/landingpage-img1.png" alt="Models">   
-    </div>    
-    <div class="looking-for-link-title">
-        <h5>Private Lease</h5>
-    </div>
-</div>  
-<div class="looking-for-middle-line"></div>  
-<div class="looking-for-items">
-    <div class="looking-for-img">
-        <img src="img/img-landingpage/landingpage-img1.png" alt="Models">
-    </div>    
-    <div class="looking-for-link-title">
-        <h5>Occasions</h5>
-    </div>
-</div> 
-<div class="looking-for-middle-line"></div>   
-<div class="looking-for-items">
-    <div class="looking-for-img">
-        <img src="img/img-landingpage/landingpage-img1.png" alt="Models">
-    </div>    
-    <div class="looking-for-link-title">
-        <h5>Dealers</h5>
-    </div>
-</div>  
-<div>
-    <!--END: LOOKING FOR SECTION-->
-
 </body>    
 </html>
