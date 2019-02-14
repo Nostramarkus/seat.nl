@@ -2,14 +2,20 @@
 
 $(document).ready(function(){
 
-    //open div
+    //open id filter-overview
     $('#openFilterOverview').click(function(){
         $('#filter-overview').show();
       });
 
-    //close div
+    //close id filter-overview
     $('#hideFilterOverview').click(function(){
         $('#filter-overview').hide();
     })  
-     
 });
+
+// Mouse over on index.php (section with car models)
+
+$(document).ready(function(){
+
+
+})

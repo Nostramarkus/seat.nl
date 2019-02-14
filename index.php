@@ -38,32 +38,46 @@
         </div>
         <div class="index-model-cars-container">
             <div class="index-model-cars">
+                <a href="model-page.php?number=1">
                 <img src="img/img-productcard/mii/mii.png" alt="SEAT Mii">
                 <p>SEAT Mii</p>
+                </a>
             </div>    
             <div class="index-model-cars">
+                <a href="model-page.php?number=2">
                 <img src="img/img-productcard/ibiza/ibiza.png" alt="SEAT Ibiza">
                 <p>SEAT Ibiza</p>
+                </a>
             </div> 
             <div class="index-model-cars">
+                <a href="model-page.php?number=3">
                 <img src="img/img-productcard/arona/arona.png" alt="SEAT Arona">
                 <p>SEAT Arona</p>
+                </a>
             </div> 
             <div class="index-model-cars">
+                <a href="model-page.php?number=4">
                 <img src="img/img-productcard/leon/leon-hatchback.png" alt="SEAT Leon">
                 <p>SEAT Leon</p>
+                </a>
             </div> 
             <div class="index-model-cars">
+                <a href="model-page.php?number=5">
                 <img src="img/img-productcard/ateca/ateca.png" alt="SEAT Ateca">
                 <p>SEAT Ateca</p>
+                </a>
             </div> 
             <div class="index-model-cars">
+                <a href="model-page.php?number=6">
                 <img src="img/img-productcard/alhambra/alhambra.png" alt="SEAT Alhambra">
                 <p>SEAT Alhambra</p>
+                </a>
             </div> 
             <div class="index-model-cars">
+                <a href="model-page.php?number=7">
                 <img src="img/img-productcard/tarraco/tarraco.png" alt="SEAT Tarraco">
                 <p>SEAT Tarraco</p>
+                </a>
             </div> 
         </div>
     </div>

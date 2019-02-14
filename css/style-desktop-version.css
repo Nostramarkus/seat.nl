@@ -165,9 +165,13 @@ body {
 }
 
 .index-model-cars {
-   
     width: 20%;
     text-align: center;
+}
+
+.index-model-cars a {
+    text-decoration: none;
+    color: black;
 }
 
 .index-model-cars img {
