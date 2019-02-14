@@ -147,6 +147,7 @@ body {
 
 .index-model-container {
     width: 100%;
+    margin-bottom: 5vh;
 }
 
 .index-model-title {
@@ -185,6 +186,100 @@ body {
 }
 
 /*END: INDEX MODELS*/
+
+/*START: INDEX ABOUT US SECTION*/
+
+.index-about-us-menu {
+    width: 100%;
+    height: 6vh;
+    background: #494949;
+}
+
+.index-about-us-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-us-textarea1 {
+    width: 40%;
+    height: 60vh;
+    background: #F47a14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-textarea1-div {
+    width: 70%;
+}
+
+.about-us-textarea1-div h1 {
+    margin-top: -1.5vh;
+    font-size: 5vh;
+    letter-spacing: 0.1vh;
+}
+
+.about-us-textarea1-div p {
+    margin-top: -1.5vh;
+    font-size: 1.4vh;
+    letter-spacing: 0.1vh;
+    text-align: justify;
+}
+
+.about-us-image1 {
+    width: 60%;
+    height: 60vh;
+}
+
+.about-us-image1 img {
+    width: 100%;
+    height: 60vh!important;
+}
+
+/**/
+.about-us-image2 {
+    width: 50%;
+    height: 60vh;
+}
+
+.about-us-image2 img {
+    width: 100%;
+    height: 60vh!important;
+}
+
+.about-us-textarea2 {
+    width: 50%;
+    height: 60vh;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**/
+
+.about-us-textarea3 {
+    width: 50%;
+    height: 60vh;
+    background: #d2d2d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-image3 {
+    width: 50%;
+    height: 60vh;
+}
+
+.about-us-image3 img {
+    width: 100%;
+    height: 60vh!important;
+}
+
+/*END: INDEX ABOUT US SECTION*/
+
 
 /*model-overview.php style*/
 

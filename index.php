@@ -35,7 +35,7 @@
     <!--MODELS-->
     <div class="index-model-container">
         <div class="index-model-title">
-            <p>Bekijk hieronder al onze modellen.</p>
+            <!-- <p>Bekijk hieronder al onze modellen.</p> -->
         </div>
         <div class="index-model-cars-container">
             <div class="index-model-cars">
@@ -82,6 +82,54 @@
             </div> 
         </div>
     </div>
+    <div class="index-about-us-menu">
+        
     </div>
+
+    <div class="index-about-us-container">
+        <div class="about-us-textarea1">
+            <div class="about-us-textarea1-div">
+                <h4>Made in Barcelona</h4>
+                <h1>WIJ ZIJN SEAT</h1>
+                <p>
+                    Dynamisch, designgericht en innovatief. Door het combineren van Spaanse en Duitse technieken produceren wij auto's die zich onderscheiden van de massa. Unieke, betrouwbare auto's met een design waar je u tegen zegt.
+                </p>
+            </div>
+        </div>
+        <div class="about-us-image1">
+            <img src="img/img-landingpage/ibiza-about-us-section.jpg" alt="Wij zijn SEAT afbeelding">
+        </div>
+    </div>
+
+    <div class="index-about-us-container">
+        <div class="about-us-image2">
+            <img src="img/img-landingpage/about-us-environment-section.jpg" alt="">
+        </div>
+        <div class="about-us-textarea2">
+            <div class="about-us-textarea1-div">
+                <h1>Duurzaamheid</h1>
+                <p>
+                We hebben het grootste zonnepaneelpark in de automotive industrie en daar zijn we meer dan trots op. Met de 267.000m2 aan zonnepanelen kunnen we onze CO2 uitstoot met 7.000 ton per jaar verminderen. Maar onze plannen zijn groter. Om onze CO2-emissie nog verder te reduceren, streven wij ernaar in 2020 een hybride en volledig elektrische SEAT in ons modellenaabod te voeren. Op de hoogste blijven? houd dan SEAT nieuws in de gaten.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="index-about-us-container">
+        <div class="about-us-textarea3">
+            <div class="about-us-textarea1-div">
+                <h1>Performance</h1>
+                <p>
+                Kracht en sportiviteit zijn in elke SEAT belangrijk, maar bij de SEAT Cupra modellen al helemaal. Deze innovatieve reeks krachtige modellen kenmerkt zich door sportiviteit en snelheid. Neem de Cupra Ateca bijvoorbeeld, die moeiteloos topprestaties aan dagelijks gebruiksgemak koppelt. Naast modellen voor de consumentenmarkt produceren we onder de naam SEAT Cupra ook raceauto's. Meer weten over dit exclusieve merk?
+                </p>
+            </div>
+        </div>
+        <div class="about-us-image3">
+            <img src="img/img-landingpage/leon-st-cupra-about-us-section.jpg" alt="">
+        </div>
+    </div>
+
+
+
 </body>    
 </html>
