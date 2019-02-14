@@ -7,8 +7,9 @@
     <!--CSS STYLE-->
     <link rel="stylesheet" type="text/css" href="css/style-desktop-version.css">
     <!--JAVASCRIPT-->
-    <style rel="js/navbar.js"></style>
-    <style rel="js/image-slider.js"></style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style rel="js/animatescroll.js"></style>
+    <script src="js/main.js"></script>
     <!--GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <!-- ICON -->
@@ -22,7 +23,7 @@
 
 <!--HEADER-->
 <div class="index-container">
-    <div class="index-header ">
+    <div class="index-header">
         <div class="index-header-titel">
             <h1>De SEAT Tarraco.</h1>
             <h3>Onze grootste SUV ooit</h3>
@@ -81,11 +82,6 @@
             </div> 
         </div>
     </div>
-    <a onclick="$('#landingspage-info-section-container').animatescroll({scrollSpeed:2000,easing:'easeOutBounce'});"><span style="font-size: 3rem; color: black;"><i class="fas fa-arrow-circle-down"></i></span></a>
-    
-    <div class="index-about-us">
-        Over SEAT
     </div>
-</div>
 </body>    
 </html>

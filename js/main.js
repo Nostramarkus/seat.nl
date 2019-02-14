@@ -12,10 +12,3 @@ $(document).ready(function(){
         $('#filter-overview').hide();
     })  
 });
-
-// Mouse over on index.php (section with car models)
-
-$(document).ready(function(){
-
-
-})

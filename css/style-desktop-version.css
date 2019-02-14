@@ -96,7 +96,7 @@ body {
 .index-header {
     margin-top: 5.1rem;
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     background-color: #f4f4f4;
     background-image: url(../img/img-landingpage/terraco-header.jpg);
     background-position: center;
@@ -167,6 +167,11 @@ body {
 .index-model-cars {
     width: 20%;
     text-align: center;
+    transition: transform .2s;
+}
+
+.index-model-cars:hover {
+    transform: scale(1.5);
 }
 
 .index-model-cars a {
@@ -180,14 +185,6 @@ body {
 }
 
 /*END: INDEX MODELS*/
-
-/*START: INDEX ABOUT US*/
-
-.index-about-us {
-    
-}
-
-/*End: INDEX ABOUT US*/
 
 /*model-overview.php style*/
 
