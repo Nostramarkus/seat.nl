@@ -61,7 +61,8 @@ include "include-basic-files/navbar-fixed.html";
             {   
                 echo
                     
-                    '<div class="model-overview-productcard animated fadeIn">
+                    '<a href="model-page.php?number='.$row['number'] .'">
+                    <div class="model-overview-productcard animated fadeIn">
                         <div class="productcard-title">
                             <h4>'.$row['model'] . '</h4>
                             <p>'.$row['modelTitle'] . '</p>
@@ -77,7 +78,8 @@ include "include-basic-files/navbar-fixed.html";
                                 <a class="button" href="model-page.php?number='.$row['number'] .'">Ontdek de '.$row['model'] . '</a>
                             </div>
                         </div>  
-                    </div>';
+                    </div>
+                    </a>';
             }  
         ?>
     </div>
