@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--CSS STYLE-->
     <link rel="stylesheet" type="text/css" href="css/style-desktop-version.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <!--JAVASCRIPT-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style rel="js/animatescroll.js"></style>
@@ -24,7 +25,7 @@
 <!--HEADER-->
 <div class="index-container">
     <div class="index-header">
-        <div class="index-header-titel">
+        <div class="index-header-titel animated fadeIn">
             <h1>De SEAT Tarraco.</h1>
             <h3>Onze grootste SUV ooit</h3>
             <a class="button" href="model-page.php?number=7">Ontdek nu</a>
@@ -83,7 +84,7 @@
         </div>
     </div>
     <div class="index-about-us-menu">
-        
+       menu 
     </div>
 
     <div class="index-about-us-container">

@@ -280,7 +280,6 @@ body {
 
 /*END: INDEX ABOUT US SECTION*/
 
-
 /*model-overview.php style*/
 
 /*title*/
@@ -296,11 +295,16 @@ body {
 /*Filter-overview*/
 
 #filter-overview {
+    margin-top: 1%;
     margin-left: 5%;
-    width: 90%;
-    /* height: 5rem; */
+    margin-right: 5%;
+    width: 89%;
+    height: 20vh;
     background: #f9f9f9;
     display: none;
+    /* padding: 10px; */
+    border: 1px solid #f9f9f9;
+    border-radius: 10px;
 }
 
 .filter-overview-title-and-close-button {
@@ -313,7 +317,6 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    
 }
 
 .filter-overview-button-show-all {
@@ -321,24 +324,21 @@ body {
 }
 
 .filter-overview-button-filter {
-    width: 40%;
+    /* margin-left: 2%; */
+    /* margin-right: */
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
 }
 
-.filter-overview-button-filter button {
-  
-}
-
-
 /*Productcard*/
 
 .model-overview-productcard-container {
-    /* margin-left: 5%; */
-    /* margin-right: 5%; */
-    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -348,7 +348,7 @@ body {
 .model-overview-productcard {
     width: 30%;
     height: auto;
-    padding: 0.2rem;
+    padding: 0.3rem;
     border-radius: 1%;
     margin: 1%;
     -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
@@ -746,11 +746,34 @@ body {
     text-decoration: none;
 }
 
+.button-filter {
+    
+    padding: 18px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black !important;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 .button-big {
     padding: 18px 100px;
 }
 
 /*END BUTTON*/
+
+/*START: others*/
+
+.close {
+    border-style: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f9f9f9;
+    font-size: 5vh;
+}
+
+/*END: others*/
 
 
 

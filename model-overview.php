@@ -13,6 +13,8 @@
     <script src="js/filter.js"></script>
     <!--GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Seat Nederland</title>
 </head>
 <body>
@@ -29,58 +31,54 @@ include "include-basic-files/navbar-fixed.html";
     <div id="filter-overview">
         <div class="filter-overview-title-and-close-button">
             <h2>Maak hieronder u keuze.</h2>
-            <button class="button" id="hideFilterOverview">sluit</button>
+            <button class="close" id="hideFilterOverview"><i class="fas fa-times"></i></button>
         </div>
         <div class="filter-overview-filter-buttons">
             <div class="filter-overview-button-show-all">
-                <button class="button" onclick="filterAll('car')">Laat alles zien</button>
+                <button class="button-filter" onclick="filterAll('car')">Laat alles zien</button>
             </div>
             <div class="filter-overview-button-filter">
                 Carrosserievarianten
-                <button class="button" onclick="filter('stadsauto')">Stadsauto</button>
-                <button class="button" onclick="filter('hatchback')">Hatchback</button>
-                <button class="button" onclick="filter('suv')">SUV</button>
-                <button class="button" onclick="filter('mpv')">MPV</button>   
+                <button class="button-filter" onclick="filter('stadsauto')">Stadsauto</button>
+                <button class="button-filter" onclick="filter('hatchback')">Hatchback</button>
+                <button class="button-filter" onclick="filter('suv')">SUV</button>
+                <button class="button-filter" onclick="filter('mpv')">MPV</button>   
             </div>
         </div>
     </div>
-  
-           
-    
 
-        <div class="model-overview-productcard-container" id="filter">
+    <div class="model-overview-productcard-container" id="filter">
+    <?php
+    include "db_connection.php";
+
+        $sql = "SELECT * FROM modellen";
         
-        <?php
-        include "db_connection.php";
+        $data = $conn->query($sql);  
 
-            $sql = "SELECT * FROM modellen";
-            
-            $data = $conn->query($sql);  
-
-            foreach ($data as $row)
-            {   
-                echo
-                    
-                    '<a href="model-page.php?number='.$row['number'] .'">
-                    <div class="model-overview-productcard animated fadeIn">
-                        <div class="productcard-title">
-                            <h4>'.$row['model'] . '</h4>
-                            <p>'.$row['modelTitle'] . '</p>
-                        </div>
-                        <div class="productcard-image">
-                            <img alt="Img-car" src="' .$row['modelImg'].'"/>
-                        </div>
-                        <div class="productcard-footer">
-                            <div class="productcard-footer-price">
-                                <p>Verkrijgbaar vanaf <span style="color: #F47a14">€'.$row['price'] . '</span> of private<br> lease \'m vanaf <span style="color: #F47a14">€'.$row['pricePrivateLease'] . '</span> pm.</p> 
-                            </div>
-                            <div class="productcard-footer-button">
-                                <a class="button" href="model-page.php?number='.$row['number'] .'">Ontdek de '.$row['model'] . '</a>
-                            </div>
-                        </div>  
+        foreach ($data as $row)
+        {   
+            echo
+                
+                '<a href="model-page.php?number='.$row['number'] .'">
+                <div class="model-overview-productcard animated fadeIn">
+                    <div class="productcard-title">
+                        <h4>'.$row['model'] . '</h4>
+                        <p>'.$row['modelTitle'] . '</p>
                     </div>
-                    </a>';
-            }  
+                    <div class="productcard-image">
+                        <img alt="Img-car" src="' .$row['modelImg'].'"/>
+                    </div>
+                    <div class="productcard-footer">
+                        <div class="productcard-footer-price">
+                            <p>Verkrijgbaar vanaf <span style="color: #F47a14">€'.$row['price'] . '</span> of private<br> lease \'m vanaf <span style="color: #F47a14">€'.$row['pricePrivateLease'] . '</span> pm.</p> 
+                        </div>
+                        <div class="productcard-footer-button">
+                            <a class="button" href="model-page.php?number='.$row['number'] .'">Ontdek de '.$row['model'] . '</a>
+                        </div>
+                    </div>  
+                </div>
+                </a>';
+        }  
         ?>
     </div>
 </div>
