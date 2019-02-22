@@ -28,7 +28,8 @@
                     <p>Verkrijgbaar vanaf <span style="color: #F47a14">€'.$row['price'] . '</span> of private<br> lease \'m vanaf <span style="color: #F47a14">€'.$row['pricePrivateLease'] . '</span> pm.</p> 
                 </div>
                 <div class="productcard-footer-button">
-                    <a class="button" href="model-page.php?number='.$row['number'] .'">Ontdek de '.$row['model'] . '</a>
+                <a class="button button-small" href="model-page.php?number='.$row['number'] .'">Ontdek de '.$row['model'] . '</a>
+                <a class="button button-small" href="configurator.php?number='.$row['number'] .'">configureer</a>
                 </div>
             </div>  
         </div>

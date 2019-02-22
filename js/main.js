@@ -12,3 +12,19 @@ $(document).ready(function(){
         $('#filter-overview').hide();
     })  
 });
+
+// Change color car on configurator.php
+
+$(document).ready(function() {
+ 
+    $('.configurator-change-color input').on('click', function() {
+        var carColor = $(this).attr('data-image');
+   
+        $('.active').removeClass('active');
+        $('.configurator-header-image img[data-image = ' + carColor + ']').addClass('active');
+        $(this).addClass('active');
+    });
+   
+  });
+
+
