@@ -28,7 +28,7 @@
         <div class="index-header-titel animated fadeIn">
             <h1>De SEAT Tarraco.</h1>
             <h3>Onze grootste SUV ooit</h3>
-            <a class="button" href="model-page.php?number=7">Ontdek nu</a>
+            <a class="button" href="model-page.php?number=6">Ontdek nu</a>
         </div>
     </div>
     <!-- <div class="index-header-footer">
@@ -68,15 +68,9 @@
                 <img src="img/img-productcard/ateca/ateca.png" alt="SEAT Ateca">
                 <p>SEAT Ateca</p>
                 </a>
-            </div> 
+            </div>  
             <div class="index-model-cars">
                 <a href="model-page.php?number=6">
-                <img src="img/img-productcard/alhambra/alhambra.png" alt="SEAT Alhambra">
-                <p>SEAT Alhambra</p>
-                </a>
-            </div> 
-            <div class="index-model-cars">
-                <a href="model-page.php?number=7">
                 <img src="img/img-productcard/tarraco/tarraco.png" alt="SEAT Tarraco">
                 <p>SEAT Tarraco</p>
                 </a>
