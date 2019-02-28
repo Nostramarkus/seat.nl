@@ -74,9 +74,9 @@ include "include-basic-files/navbar-fixed.html";
                         </div>
                         <div class="productcard-footer-button">
                             <a class="button button-small" href="model-page.php?number='.$row['number'] .'">Ontdek de '.$row['model'] . '</a>
-                            <a class="button button-small" href="configurator.php?number='.$row['number'] .'">configureer</a>
+                            <a class="button button-small" href="configurator-version.php?number='.$row['number'] .'">configureer</a>
                         </div>
-                    </div>  
+                    </div> 
                 </div>
                 </a>';
         }  

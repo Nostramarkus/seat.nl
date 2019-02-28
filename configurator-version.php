@@ -53,7 +53,7 @@ include "include-basic-files/navbar-fixed.html";
                 </div>
                 <div class="configurator-productcard-footer">
                     <div class="configurator-productcard-footer-button">
-                        <a class="button" href="configurator-versions1.php?number='.$row['number'] .'">Kies uitvoering '.$row['version1'] .'</a>
+                    <a class="button" href="configurator-version-reference.php?number='.$row['number'] .'">Kies uitvoering '.$row['version1'] .'</a>
                     </div>
                 </div>  
             </div>
@@ -69,7 +69,7 @@ include "include-basic-files/navbar-fixed.html";
                 </div>
                 <div class="configurator-productcard-footer">
                     <div class="configurator-productcard-footer-button">
-                        <a class="button" href="configurator-versions2.php?number='.$row['number'] .'">Kies uitvoering '.$row['version2'] .'</a>
+                        <a class="button" href="configurator-version-style.php?number='.$row['number'] .'">Kies uitvoering '.$row['version2'] .'</a>
                     </div>
                 </div>  
             </div>
@@ -85,7 +85,7 @@ include "include-basic-files/navbar-fixed.html";
                 </div>
                 <div class="configurator-productcard-footer">
                     <div class="configurator-productcard-footer-button">
-                        <a class="button" href="configurator-versions3.php?number='.$row['number'] .'">Kies uitvoering '.$row['version3'] .'</a>
+                        <a class="button" href="configurator-version-fr.php?number='.$row['number'] .'">Kies uitvoering '.$row['version3'] .'</a>
                     </div>
                 </div>  
             </div>

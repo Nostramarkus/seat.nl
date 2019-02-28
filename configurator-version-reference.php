@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+$id = 10;  //store 10 in id variable
+$_SESSION['id'] = $id;  // now, store $id i.e, 10 in  Session variable named id. 
+
+echo $_SESSION['id'];   // now, print the Session variable
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,12 +27,13 @@
 
 <div class="model-page-header-container">
 <?php
-include "include-basic-files/navbar-fixed.html";
+
+// include "include-basic-files/navbar-fixed.html";
 include "db_connection.php";
 
 $number = $_GET["number"];
 
-    $sql = "SELECT * FROM modellen WHERE number='$number'";
+    $sql = "SELECT * FROM config WHERE number='$number'";
 
     $data = $conn->query($sql);  
 
@@ -32,17 +42,17 @@ $number = $_GET["number"];
         echo
             '<div class="configurator-model-container">
                 <div class="configurator-header-image">
-                    <img data-image="white" class="active" src="' .$row['color1'].'" alt="Wit">
-                    <img data-image="black" src="' .$row['color2'].'" alt="Zwart">
-                    <img data-image="blue" src="' .$row['color3'].'" alt="Blauw">
-                    <img data-image="orange" src="' .$row['color4'].'" alt="Oranje">
+                    <img data-image="white" class="active" src="' .$row['version1WhiteImg'].'" alt="Wit">
+                    <img data-image="black" src="' .$row['version1BlackImg'].'" alt="Zwart">
+                    <img data-image="blue" src="' .$row['version1BlueImg'].'" alt="Blauw">
+                    <img data-image="orange" src="' .$row['version1OrangeImg'].'" alt="Oranje">
                 </div>
                 <div class="configurator-article-menu">
                     <ul class="configurator-ul">
                         <div class="configurator-p">SEAT ' .$row['model'].' </div>
-                        <a href="#"><li class="configurator-li"> 1. Motor</li></a>
-                        <a href="#"><li class="configurator-li">2. Exterieur</li></a>
-                        <a href="#"><li class="configurator-li">3. Interieur</li></a>
+                        <a href="#"><li class="configurator-li"> 1. Kleuren</li></a>
+                        <a href="#"><li class="configurator-li">2. Velgen</li></a>
+                        <a href="#"><li class="configurator-li">3. Opties</li></a>
                         <a href="#"><li class="configurator-li">4. Samenvatting</li></a>
                     </ul>
                 </div>
@@ -68,23 +78,23 @@ $number = $_GET["number"];
                             <label for="orange"><span></span></label>
                         </div>
                     </div>
+                    <a href="configurator-version-reference-wheels.php" class="button">Velgen > </a>
                     </div>
+                    
                     <div class="configurator-overview-section">
-                        <h1>Uw ' .$row['model'].'</h1>
+                        <h1>Uw SEAT ' .$row['model'].'</h1>
                         <div class="configurator-header-image adjustment">
-                            <img data-image="white" class="active" src="' .$row['color1'].'" alt="Wit">
-                            <img data-image="black" src="' .$row['color2'].'" alt="Zwart">
-                            <img data-image="blue" src="' .$row['color3'].'" alt="Blauw">
-                            <img data-image="orange" src="' .$row['color4'].'" alt="Oranje">
+                            <img data-image="white" class="active" src="' .$row['version1WhiteImg'].'" alt="Wit">
+                            <img data-image="black" src="' .$row['version1BlackImg'].'" alt="Zwart">
+                            <img data-image="blue" src="' .$row['version1BlueImg'].'" alt="Blauw">
+                            <img data-image="orange" src="' .$row['version1OrangeImg'].'" alt="Oranje">
                         </div>
                         <div class="configurator-overview-info-section">
                             <div class="configurator-overview-price"
-                            <p>Basisauto:   € ' .$row['price'].'</p>
-                            <p>Meeruitvoering:   € 0</p>
-                            </div>
-                            
-                            
-                        </div>
+                                <p>Basisauto:   € ' .$row['version1BasicPrice'].'</p>
+                                <p>Meeruitvoering:   € 0</p>
+                            </div> 
+                        </div>                       
                     </div>
                 </div>
             </div>
@@ -95,6 +105,7 @@ $number = $_GET["number"];
  ';
     }  
 ?>
+
 </body>    
 </html>
 
