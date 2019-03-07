@@ -8,6 +8,21 @@
     <link rel="stylesheet" type="text/css" href="css/style-desktop-version.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <!--JAVASCRIPT-->
+    <?php
+    /*
+    Hi Tim,
+    
+    Hieronder laad je javascript in, heel goed omdat op dit punt in de header te doen als de js iets op pageload zou moeten uitvoeren.
+    Echter, al je javascript heeft pas invloed op de pagina na de pageload. Je gebruikt zowiezo jQuery wat opzich vrijwel altijd
+    een $(document).ready om de gehele code heeft staan (selectors zoals $(".mijnClassSelector") kunnen pas gevonden worden als alles geladen is)
+    Daarom is het aan te raden om alle script tags onderin vóór de afsluitende body tag </body> te plaatsen. Je pagina zal hierdoor sneller laden.
+    Want je scherm is onderin de code voor </body> al opgebouwd/uitgerenderd voor de eindgebruiker dat is een mooi punt om dan pas de jQuery js 
+    in te laden. Op dit moment is je jQuery code (main.js) nog niet groot/zwaar genoeg om dit echt te merken tijdens de pageload maar dit kan al snel 
+    oplopen als je meer en meer plugins gaat gebruiken en/of meer jQuery code zelf schrijft. 
+    
+    Kortom: Neem het van me aan dat je jQuery vrijwel altijd beter onderin de pagina kunt laden vóór </body>
+    */
+    ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style rel="js/animatescroll.js"></style>
     <script src="js/main.js"></script>
