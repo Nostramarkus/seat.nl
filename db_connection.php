@@ -1,5 +1,7 @@
 <?php
-
+/*
+Zeer gevaarlijk om je database credentials open en bloot te hosten op GitHub ;)
+*/
 $servername = "localhost";
 $username = "root";
 $password = "root";
